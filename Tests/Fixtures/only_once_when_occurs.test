@@ -1,0 +1,25 @@
+--TEST--
+"onlyOnceWhenOccurs" test
+--TEMPLATE--
+{% for i in values if i is onlyOnceWhenOccurs(3) %}
+{{ i }}
+{% endfor %}
+--DATA--
+return array( 'values' => array(
+    'A',
+    'A',
+    'B',
+    'B',
+    'B',
+    'C',
+    'A',
+    'C',
+    'D',
+    'C',
+    'D',
+    'E'
+));
+--EXPECT--
+B
+A
+C

@@ -1,0 +1,26 @@
+{
+  "name": "dpolac/twig-only-once",
+  "description": "Twig test which returns true only once per value.",
+  "keywords": ["distinct", "filter", "unique"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Damian Polac",
+      "email": "damian.polac.111@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "twig/twig": "~1.0",
+    "ext-spl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DPolac\\OnlyOnce\\": ""
+    }
+  }
+}
